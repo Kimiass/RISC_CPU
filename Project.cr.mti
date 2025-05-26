@@ -1,0 +1,186 @@
+D:/lessons/CA/Project/CPU.v {1 {vlog -work work -vopt -stats=none D:/lessons/CA/Project/CPU.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module CPU
+
+Top level modules:
+	CPU
+
+} {} {}} D:/lessons/CA/Project/Load.v {1 {vlog -work work -vopt -stats=none D:/lessons/CA/Project/Load.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Load
+-- Compiling module LoadTB
+
+Top level modules:
+	LoadTB
+
+} {} {}} D:/lessons/CA/Project/Memory.v {1 {vlog -work work -vopt -stats=none D:/lessons/CA/Project/Memory.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Memory
+-- Compiling module MemoryTB
+
+Top level modules:
+	MemoryTB
+
+} {} {}} D:/lessons/CA/Project/DivisionBy2Test.v {1 {vlog -work work -vopt -stats=none {D:\lessons\CA\Project\DivisionBy2Test.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module TestDivisionBy2
+
+Top level modules:
+	TestDivisionBy2
+
+} {} {}} D:/lessons/CA/Project/CPU2.v {1 {vlog -work work -vopt -stats=none {D:\lessons\CA\Project\CPU2.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module CPU2
+
+Top level modules:
+	CPU2
+
+} {} {}} D:/lessons/CA/Project/Complement.v {1 {vlog -work work -vopt -stats=none D:/lessons/CA/Project/Complement.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Complement2
+-- Compiling module Complement2TB
+
+Top level modules:
+	Complement2TB
+
+} {} {}} D:/lessons/CA/Project/Store.v {1 {vlog -work work -vopt -stats=none D:/lessons/CA/Project/Store.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Store
+-- Compiling module StoreTB
+
+Top level modules:
+	StoreTB
+
+} {} {}} D:/lessons/CA/Project/SC.v {1 {vlog -work work -vopt -stats=none D:/lessons/CA/Project/SC.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module SC
+-- Compiling module SCTB
+
+Top level modules:
+	SCTB
+
+} {} {}} D:/lessons/CA/Project/Xnor.v {1 {vlog -work work -vopt -stats=none D:/lessons/CA/Project/Xnor.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Xnor
+-- Compiling module XnorTB
+
+Top level modules:
+	XnorTB
+
+} {} {}} D:/lessons/CA/Project/Decoder3_8.v {1 {vlog -work work -vopt -stats=none D:/lessons/CA/Project/Decoder3_8.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Decoder3_8
+-- Compiling module Decoder3_8TB
+
+Top level modules:
+	Decoder3_8TB
+
+} {} {}} D:/lessons/CA/Project/Ashl.v {1 {vlog -work work -vopt -stats=none D:/lessons/CA/Project/Ashl.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Ashl
+-- Compiling module AshlTB
+
+Top level modules:
+	AshlTB
+
+} {} {}} D:/lessons/CA/Project/TestAdd.v {1 {vlog -work work -vopt -stats=none {D:\lessons\CA\Project\TestAdd.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module TestAdd
+
+Top level modules:
+	TestAdd
+
+} {} {}} D:/lessons/CA/Project/Reg4Bit.v {1 {vlog -work work -vopt -stats=none D:/lessons/CA/Project/Reg4Bit.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Reg4Bit
+-- Compiling module Reg4BitTB
+
+Top level modules:
+	Reg4BitTB
+
+} {} {}} D:/lessons/CA/Project/BUS.v {1 {vlog -work work -vopt -stats=none D:/lessons/CA/Project/BUS.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module BUS
+-- Compiling module BUSTB
+
+Top level modules:
+	BUSTB
+
+} {} {}} C:/modeltech64_2020.4/examples/Add.v {1 {vlog -work work -vopt -stats=none C:/modeltech64_2020.4/examples/Add.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Add
+-- Compiling module AddTB
+
+Top level modules:
+	AddTB
+
+} {} {}} D:/lessons/CA/Project/Encoder8_3.v {1 {vlog -work work -vopt -stats=none D:/lessons/CA/Project/Encoder8_3.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Encoder8_3
+-- Compiling module Encoder8_3TB
+
+Top level modules:
+	Encoder8_3TB
+
+} {} {}} D:/lessons/CA/Project/MUX8_1.v {1 {vlog -work work -vopt -stats=none D:/lessons/CA/Project/MUX8_1.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module MUX8_1
+-- Compiling module MUX8_1TB
+
+Top level modules:
+	MUX8_1TB
+
+} {} {}} D:/lessons/CA/Project/DivisionBy2.v {1 {vlog -work work -vopt -stats=none D:/lessons/CA/Project/DivisionBy2.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module DivisionBy2
+-- Compiling module DivisionBy2TB
+
+Top level modules:
+	DivisionBy2TB
+
+} {} {}} D:/lessons/CA/Project/ALU.v {1 {vlog -work work -vopt -stats=none D:/lessons/CA/Project/ALU.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module ALU
+-- Compiling module ALUTB
+
+Top level modules:
+	ALUTB
+
+} {} {}} D:/lessons/CA/Project/Controller.v {1 {vlog -work work -vopt -stats=none D:/lessons/CA/Project/Controller.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Controller
+
+Top level modules:
+	Controller
+
+} {} {}} D:/lessons/CA/Project/Reg8Bit.v {1 {vlog -work work -vopt -stats=none D:/lessons/CA/Project/Reg8Bit.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Reg8Bit
+-- Compiling module Reg8BitTB
+
+Top level modules:
+	Reg8BitTB
+
+} {} {}} D:/lessons/CA/Project/TestComplement2.v {1 {vlog -work work -vopt -stats=none {D:\lessons\CA\Project\TestComplement2.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module TestComplement2
+
+Top level modules:
+	TestComplement2
+
+} {} {}} D:/lessons/CA/Project/TestXNOR.v {1 {vlog -work work -vopt -stats=none {D:\lessons\CA\Project\TestXNOR.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module TestXNOR
+
+Top level modules:
+	TestXNOR
+
+} {} {}} D:/lessons/CA/Project/DataPath.v {1 {vlog -work work -vopt -stats=none D:/lessons/CA/Project/DataPath.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module DataPath
+-- Compiling module DataPathTB
+
+Top level modules:
+	DataPathTB
+
+} {} {}}

@@ -1,0 +1,23 @@
+module 2'sCMP(result, Memory);
+	output [7 : 0] result ;
+	input [7 : 0] Memory;
+	
+	assign result = ~(Memory) + 1;
+endmodule
+
+
+module 2'sCMPTB;
+	wire [7 : 0] result ;
+	reg [7 : 0] Memory;
+
+	2'sCMP sample(result, Memory);
+
+	initial
+		begin
+			Memory = 8'b 10001010;
+			#100
+			Memory = 8'b 00011010;
+			#100
+			Memory = 8'b 10110101;
+		end
+endmodule

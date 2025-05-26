@@ -1,0 +1,45 @@
+module ALU(clk,AC ,DR ,selectors ,result, E);
+
+	output[7:0] result;
+	output E;
+	input clk;
+	input[7:0] AC;
+	input[7:0] DR;
+	input[2:0] selectors;
+	wire[7:0] add;
+    	wire addCout;
+	wire[7:0] ashl;
+	wire ashlCout;
+    	wire[7:0] xNor;
+	wire[7:0] div;
+	wire divCout;
+	wire load;
+    	wire[7:0] complement;
+	
+
+    	Add ALUadd(add,addCout,AC,DR);
+	Ashl ALUashl(ashl,ashlCout,DR);
+	Xnor ALUxnor(xNor,AC,DR);
+	DivisionBy2 ALUdiv(div,divCout,DR);
+	Load ALUload (load,DR);
+	Complement2 ALUcompelement(complement,DR);
+
+
+
+    	assign out = 
+        	(selectors == 3'b000) ? add :
+        	(selectors == 3'b001) ? ashl :
+		(selectors == 3'b010) ? xNor :
+        	(selectors == 3'b011) ? div :
+		(selectors == 3'b100) ? load :
+        	(selectors == 3'b110) ? complement :
+                // selectors = 3'b 101 store -> doesn't need ALU 
+        	8'bx;
+
+    	assign E = 
+        	(selectors == 3'b000) ? addCout :
+        	(selectors == 3'b001) ? ashlCout :
+        	(selectors == 3'b011) ? divCout : 
+        	1'bx;
+
+endmodule

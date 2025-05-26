@@ -1,0 +1,60 @@
+module DataPath(clk,loadPC,loadAR,loadDR,LoadAC,incPC,incAR,incDR,incAC,incIR,clearPC,clearAR,clearDR,clearAC,clearIR,busSelectors, read, write, address,busSelectors , aluOpcode);
+    input clk,loadPC,loadAR,loadDR,LoadAC,incPC,incAR,incDR,incAC,incIR,clearPC,clearAR,clearDR,clearAC,clearIR,read,write;
+    input [3:0] address;
+    input [2:0] busSelectors , aluOpcode;    
+
+    wire [7:0] bus; 
+    wire [7:0] DR,AC,IR ,MemoryOut;  
+    wire [3:0] AR, PC;
+
+
+    
+    BUS busPath(bus , 8'b0, {4'b0,AR},{4'b0,PC},DR,AC,IR,8'b0,MemoryOut, busSelectors);
+
+    ALU aluUnit(clk,AC,DR,aluOPCODE,AC, E);
+
+    Reg4Bit regPC(clk,loadPC,incPC,clearPC,bus[3:0],PC);
+    Reg4Bit regAR(clk,loadAR,incAr,clearAR,bus[3:0],AR);
+
+    Reg8Bit regDR(clk,loadDR,incDR,clearDR,bus[7:0],DR);
+    Reg8Bit regAC(clk,loadAC,incAC,clearAC,alu,AC);
+    Reg8Bit regIR(clk,loadIR,incIR,clearIR,bus[7:0],IR);
+
+    Memory MemoryUnit(clk,write,read,address,bus,MemoryOut);
+    
+
+endmodule
+
+
+module DataPathTB;
+	reg clk,loadPC,loadAR,loadDR,LoadAC,incPC,incAR,incDR,incAC,incIR,clearPC,clearAR,clearDR,clearAC,clearIR,read,write;
+	reg write_enable;
+	reg [3:0] address;
+	reg [2:0] busSelectors , aluOpcode;
+
+
+	DataPath sample(clk,loadPC,loadAR,loadDR,LoadAC,incPC,incAR,incDR,incAC,incIR,clearPC,clearAR,clearDR,clearAC,clearIR,busSelectors, read, write, address,busSelectors , aluOpcode);
+
+
+	initial 
+		begin
+        	clk = 1;
+        	forever 
+		#50 clk = ~clk;
+    		end
+	initial
+		begin
+		
+		write = 1;
+		address = 4'b0010;
+		#100
+
+		write = 0;
+		busSelectors = 3'b111;
+		aluOpcode = 3'b100;
+		loadAC =1;
+		
+		
+		
+		end
+endmodule
